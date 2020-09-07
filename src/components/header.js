@@ -59,13 +59,11 @@ export default function ButtonAppBar() {
           </Typography>
            <TemporaryDrawer />
            <div className={classes.item}>
-             {/* <Link to="/" className={classes.link}><Button className={classes.appBarButton} color="inherit">HOME</Button></Link> */}
-             <SimpleMenu />
-             {/* <Link to="/contactForm" className={classes.link}><Button className={classes.appBarButton} color="inherit">CONTACT</Button></Link> */}
+             <Link to="/" className={classes.link}><Button className={classes.appBarButton} color="inherit">HOME</Button></Link>
+             <Link to="/profile" className={classes.link}><Button className={classes.appBarButton} color="inherit">Profile</Button></Link>
              <Button className={classes.appBarButton} color="inherit" onClick={() => {window.open(qiitaUrl);}}>Qiita</Button>
              <Button className={classes.appBarButton} color="inherit" onClick={() => {window.open(wantedlyUrl);}}>Wantedly</Button>
              <Button className={classes.appBarButton} color="inherit" onClick={() => {window.open(facebookUrl);}}><FacebookIcon/></Button>
-             {/* <Button className={classes.appBarButton} color="inherit" onClick={() => {window.open(twitterUrl);}}><TwitterIcon/></Button> */}
              <Button className={classes.appBarButton} color="inherit" onClick={() => {window.open(githubUrl);}}><GitHubIcon/></Button>
            </div>
         </Toolbar>
