@@ -16,7 +16,7 @@ export default function ImageAvatar() {
 
   return (
     <Grid container justify="center" alignItems="center">
-      <Avatar alt="my picture" src="images/myPic.jpg" className={classes.Avatar} />
+      <Avatar alt="my picture" src="images/profile_image.png" className={classes.Avatar} />
     </Grid>
   );
 }

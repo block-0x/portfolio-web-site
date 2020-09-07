@@ -65,7 +65,7 @@ class Performance extends React.Component {
       title: 'Performance',
       subtitle: '実績',
       workFlag: ['1', '2', '3', '4'],
-      portfolioImg: './images/portfolio.gif',
+      portfolioImg: './images/p_1.png',
       portfolioTitle: "Portfolio",
       portfolioDate: '2020.09',
       portfolioSummary: 'Reactを使用したポートフォリオ紹介サイト',

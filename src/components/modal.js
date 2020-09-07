@@ -32,7 +32,7 @@ const useStyles = makeStyles(theme => ({
     borderRadius: 16,
     boxShadow: '0 4px 20px 0 rgba(0, 0, 0, 0.1), 0 7px 10px -5px rgba(75, 192, 200, 0.2)',
     width: 500,
-    height: 320,
+    height: 300,
     cursor: 'pointer',
     [theme.breakpoints.down('sm')]: {
       width: 350,
@@ -40,10 +40,12 @@ const useStyles = makeStyles(theme => ({
     },
   },
   modalImage: {
+    marginLeft: 40,
+    marginTop: 40,
     borderRadius: 16,
     boxShadow: '0 4px 20px 0 rgba(0, 0, 0, 0.1), 0 7px 10px -5px rgba(75, 192, 200, 0.2)',
     width: 500,
-    height: 320,
+    height: 300,
     cursor: 'pointer',
     [theme.breakpoints.down('sm')]: {
       width: 250,
@@ -51,7 +53,8 @@ const useStyles = makeStyles(theme => ({
     },
   },
   Work: {
-    marginLeft: 30,
+    marginLeft: 40,
+    marginTop: 40,
     [theme.breakpoints.down('sm')]: {
       fontSize: '0.8rem',
       marginTop: 10,
@@ -64,6 +67,7 @@ const useStyles = makeStyles(theme => ({
     color: '#666666',
   },
   skillIcon: {
+    marginLeft: 40,
     marginTop: 10,
     marginRight: 5,
     width: 100,
@@ -79,24 +83,17 @@ const useStyles = makeStyles(theme => ({
 
 export default function SimpleModal(props) {
   const classes = useStyles();
-
   const [open, setOpen] = React.useState(false);
-
   const handleOpen = () => {
     setOpen(true);
   };
-
   const handleClose = () => {
     setOpen(false);
   };
-
-  const gitHubUrl = 'https://github.com/isamu-takemoto/react-portfolio';
-  const portfolioUrl = 'https://isamu-takemoto.github.io/react-portfolio/';
-
+  const gitHubUrl = 'https://github.com/maki-iida/portfolio-web-site/';
+  const portfolioUrl = 'https://portfolio999.herokuapp.com/';
   const workFlag = ['1', '2', '3', '4'];
-
   let portfolio = ['React', 'Material-UI','React router'];
-
   let portfolioText = [
     'フレームワーク: React.js',
     'UIライブラリ: Material UI',
@@ -105,8 +102,8 @@ export default function SimpleModal(props) {
     '静的サイト'];
 
   if (props.workFlag === workFlag[1]) {
-    portfolio = ['React'];
-    portfolioText = ['あ','い','う','え','お','か','き','く','け'];
+    let portfolio = ['Python', 'pandas', 'selenium', 'BeautifulSoup'];
+    let portfolioText = ['あ','い','う','え','お','か','き','く','け'];
   } else if (props.workFlag === workFlag[2])
   {
     portfolio = ['React','isamu'];
