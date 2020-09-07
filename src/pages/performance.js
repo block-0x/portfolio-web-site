@@ -60,11 +60,10 @@ const useStyles = theme => ({
 class Performance extends React.Component {
   constructor(props) {
     super(props);
-
     this.state = {
       title: 'Performance',
       subtitle: '実績',
-      workFlag: ['1', '2', '3', '4'],
+      workFlag: ['0', '1', '2', '3'],
       portfolioImg: './images/p_1.png',
       portfolioTitle: "Portfolio",
       portfolioDate: '2020.09',

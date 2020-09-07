@@ -90,28 +90,64 @@ export default function SimpleModal(props) {
   const handleClose = () => {
     setOpen(false);
   };
-  const gitHubUrl = 'https://github.com/maki-iida/portfolio-web-site/';
-  const portfolioUrl = 'https://portfolio999.herokuapp.com/';
-  const workFlag = ['1', '2', '3', '4'];
-  let portfolio = ['React', 'Material-UI','React router'];
-  let portfolioText = [
-    'フレームワーク: React.js',
-    'UIライブラリ: Material UI',
-    'ルーティング: react-router-dom',
-    'レスポンシブ対応',
-    '静的サイト'];
+  const workFlag = ['0', '1', '2', '3'];
+  let title = [];
+  let subtitle = [];
+  let portfolioImg =  [];
+  let portfolioTitle = [];
+  let portfolioDate = [];
+  let portfolioSummary = [];
+  let gitHubUrl = [];
+  let portfolioUrl = [];
+  let portfolio = [];
+  let portfolioText = [];
 
-  if (props.workFlag === workFlag[1]) {
-    let portfolio = ['Python', 'pandas', 'selenium', 'BeautifulSoup'];
-    let portfolioText = ['あ','い','う','え','お','か','き','く','け'];
-  } else if (props.workFlag === workFlag[2])
-  {
-    portfolio = ['React','isamu'];
-    portfolioText = ['あ','い','う','え','お','か','き'];
-  } else if (props.workFlag === workFlag[3])
-  {
-    portfolio = ['React','takemoto'];
-    portfolioText = ['あ','い','う','え','お'];
+  if (props.workFlag === workFlag[0]){
+    title = 'Performance';
+    subtitle = '実績';
+    portfolioImg = './images/p_1.png';
+    portfolioTitle = "Portfolio";
+    portfolioDate = '2020.09';
+    portfolioSummary = '2020.09';
+    gitHubUrl = 'https://github.com/maki-iida/portfolio-web-site/';
+    portfolioUrl = 'https://portfolio999.herokuapp.com/';
+    portfolio = ['React', 'Material-UI','React router'];
+    portfolioText = [
+      'フレームワーク: React.js',
+      'UIライブラリ: Material UI',
+      'ルーティング: react-router-dom',
+      'レスポンシブ対応',
+      '静的サイト'];
+  } else if (props.workFlag === workFlag[1]){
+    gitHubUrl = 'https://github.com/maki-iida/portfolio-web-site/';
+    portfolioUrl = 'https://portfolio999.herokuapp.com/';
+    portfolio = ['React', 'Material-UI','React router'];
+    portfolioText = [
+      'フレームワーク: React.js',
+      'UIライブラリ: Material UI',
+      'ルーティング: react-router-dom',
+      'レスポンシブ対応',
+      '静的サイト'];
+  } else if (props.workFlag === workFlag[2]){
+    gitHubUrl = 'https://github.com/maki-iida/portfolio-web-site/';
+    portfolioUrl = 'https://portfolio999.herokuapp.com/';
+    portfolio = ['React', 'Material-UI','React router'];
+    portfolioText = [
+      'フレームワーク: React.js',
+      'UIライブラリ: Material UI',
+      'ルーティング: react-router-dom',
+      'レスポンシブ対応',
+      '静的サイト'];
+  } else if (props.workFlag === workFlag[3]){
+    gitHubUrl = 'https://github.com/maki-iida/portfolio-web-site/';
+    portfolioUrl = 'https://portfolio999.herokuapp.com/';
+    portfolio = ['React', 'Material-UI','React router'];
+    portfolioText = [
+      'フレームワーク: React.js',
+      'UIライブラリ: Material UI',
+      'ルーティング: react-router-dom',
+      'レスポンシブ対応',
+      '静的サイト'];
   }
 
   return (
@@ -126,6 +162,8 @@ export default function SimpleModal(props) {
         <div  className={classes.paper}>
           <div className={classes.app}>
             <img src={props.Images} alt="" className={classes.modalImage} />
+            <img src={props.portfolioImg} alt="" className={classes.portfolioImg} />
+            {/* <img src={this.state.portfolioImg} workFlag={this.state.workFlag[0]} title={this.state.portfolioTitle} date={this.state.portfolioDate} summary={this.state.portfolioSummary}/> */}
             <div>
               <Button className={classes.appBarButton} color="inherit" onClick={() => {window.open(gitHubUrl);}}><GitHubIcon/></Button>
               <Button className={classes.appBarButton} color="inherit" onClick={() => {window.open(portfolioUrl);}}><LinkIcon/></Button>
