@@ -123,7 +123,7 @@ class Profile extends React.Component {
 
     this.state = {
       title: 'Profile',
-      subtitle: '経歴',
+      subtitle: 'プロフィール',
       birth: '1995.11',
       age: '24',
     };
@@ -133,7 +133,7 @@ class Profile extends React.Component {
     const { classes } = this.props;
     return (
       <section>
-        <ContentTitle title={this.state.title} subtitle={this.state.subtitle}/>
+        <ContentTitle variant="h2" title={this.state.title} subtitle={this.state.subtitle}/>
         <Container>
           <div className={classes.root}>
               <div className={classes.profile}>
@@ -143,17 +143,13 @@ class Profile extends React.Component {
                 <div className={classes.contents}>
                   <div>
                     <div className={classes.header}>
-                      <div className={classes.name}>Isamu Takemoto</div>
+                      <div className={classes.name}>Iida Jun（24）</div>
                       <div className={classes.job}>Web Developer</div>
                     </div>
                     <div className={classes.contentBody}>
                       <dl>
                         <dt>誕生日</dt>
                           <dd>{this.state.birth}</dd>
-                      </dl>
-                      <dl>
-                      <dt>歳</dt>
-                          <dd>{this.state.age}</dd>
                       </dl>
                       <dl>
                         <dt>趣味</dt>

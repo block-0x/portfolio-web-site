@@ -1,6 +1,5 @@
 import React from 'react';
 import { withStyles} from '@material-ui/core/styles';
-import ContentTitle from '../components/contentTitle';
 import Container from '@material-ui/core/Container';
 import SimpleModal from '../components/modal';
 
