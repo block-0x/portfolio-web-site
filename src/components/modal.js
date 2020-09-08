@@ -113,11 +113,12 @@ export default function SimpleModal(props) {
     portfolioDate = '2020.09';
     gitHubUrl = 'https://github.com/maki-iida/portfolio-web-site/';
     portfolioUrl = 'https://portfolio999.herokuapp.com/';
-    portfolio = ['React', 'Material-UI','React router'];
+    portfolio = ['React', 'Material-UI','React router', 'Firebase'];
     portfolioText = [
       'ポートフォリオをまとめた静的サイト',
       'レスポンシブ対応',
-      'ルーティング: react-router-dom',
+      'Firebase Hosting',
+      'ルーティング: react-router-dom'
     ];
   } else if (props.workFlag === workFlag[1]){
     portfolioTitle = "music-scraper";
