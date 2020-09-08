@@ -157,7 +157,6 @@ export default function SimpleModal(props) {
       '台湾がメインダーゲット'
     ];
   }
-
   return (
     <div>
       <img src={props.Images} alt="" className={classes.Image} onClick={handleOpen} />

@@ -76,7 +76,6 @@ class Performance extends React.Component {
   
   render() {
     const { classes } = this.props;
-
     return (
       <section>
         <Container>

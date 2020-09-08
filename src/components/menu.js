@@ -6,12 +6,12 @@ import { makeStyles} from '@material-ui/core/styles';
 import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
-    appBarButtonMenu: {
-      margin: '0 16',
-      '&:hover': {
-      backgroundColor: '#4bc0c8',
-      },
+  appBarButtonMenu: {
+    margin: '0 16',
+    '&:hover': {
+    backgroundColor: '#4bc0c8',
     },
+  },
   link: {
     color: 'inherit',
     textDecoration: 'none',
@@ -28,7 +28,6 @@ export default function SimpleMenu() {
   const handleClose = () => {
     setAnchorEl(null);
   };
-
   return (
     <div>
       <Button aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick} className={classes.appBarButtonMenu} color="inherit">

@@ -120,7 +120,6 @@ const useStyles = theme => ({
 class Profile extends React.Component {
   constructor(props) {
     super(props);
-
     this.state = {
       title: 'Profile',
       subtitle: 'プロフィール',
@@ -159,7 +158,9 @@ class Profile extends React.Component {
                         <dt>自己紹介</dt>
                         <dd>長崎出身の24歳男性
                           <br/>東京都目黒区在住
-                          <br/>休日はYouTubeをよく見ます</dd>
+                          <br/>企業経験あり
+                          <br/>個人で食に関するYouTubeを運用
+                        </dd>
                       </dl>
                     </div>
                   </div>
@@ -174,7 +175,7 @@ class Profile extends React.Component {
                     <div className="header">
                       <p className="during">2019.5 - 現在</p>
                       <Typography variant="h3" className="title">
-                      <dt>IT教育
+                      <dt>IT教育系アプリ
                       <br/>プロダクトオーナー・社内SE 兼 プログラミングメンター</dt>
                       </Typography>
                     </div>
@@ -182,9 +183,9 @@ class Profile extends React.Component {
                       <p>
                         業務委託契約
                         <br />
-                        大幅なアプリの効率化を実現し、入社5ヶ月で社長賞受賞
-                        <br />
                         GitHubのカンバンを使用して、自社プロダクトのスクラム開発プロセスを管理
+                        <br />
+                        大幅なアプリの効率化を実現し、入社5ヶ月で社長賞受賞
                         <br />
                         社内のアプリ改修案件を管理
                         <br />
@@ -201,7 +202,7 @@ class Profile extends React.Component {
                     <div className="header">
                       <p className="during">2018.04 - 2019.9</p>
                       <Typography variant="h3" className="title">
-                      <dt>起業・共同設立 インターネット広告
+                      <dt>起業・共同設立 ネット広告系アプリ
                       <br/>ディレクター 兼 フロントエンジニア</dt>
                       </Typography>
                     </div>
@@ -213,7 +214,7 @@ class Profile extends React.Component {
                         <br />
                         ブロックチェーンとAIを使用した2C向けのWebアプリケーション
                         <br />
-                        仮想通貨絡みの法律や、エンジェル投資家からの投資が得られなかったことの資金不足で運用を中断しました。
+                        仮想通貨絡みの法律や、エンジェル投資家からの投資が得られなかったことの資金不足で運用を中断
                         <br />
                         <br />
                         Javascript, React
@@ -226,15 +227,15 @@ class Profile extends React.Component {
                     <div className="header">
                       <p className="during">2017.08 - 2018.01</p>
                       <Typography variant="h3" className="title">
-                      <dt>メディア
+                      <dt>メディア系アプリ
                       <br/>サーバーサイドエンジニア</dt>
                       </Typography>
                     </div>
                     <div className="body">
                       <p>
                       インターン・のちに業務委託契約
-                      <br />
-                      自社サービスのバックエンドエンジニアとしてインターン
+                        <br />
+                        自社サービスのバックエンドエンジニアとしてインターン
                         <br />
                         Ruby on RailsとWordPressで構築されたサイトのサーバーサイド担当
                         <br />
@@ -257,9 +258,9 @@ class Profile extends React.Component {
                     </div>
                     <div className="body">
                       <p>
-                      学生
+                        プログラミングスクール学生
                         <br />
-                        東京都渋谷区にあるプログラミングスクール
+                        DMM We Camp
                         <br />
                         Webアプリケーション開発の基礎を学習
                         <br />

@@ -25,17 +25,17 @@ const useStyles = makeStyles((theme) => ({
     margin: '0 16',
     '&:hover, &.focus': {
     backgroundColor: '#4bc0c8',
-  },
+    },
   },
   link: {
-      color: 'inherit',
-      textDecoration: 'none',
+    color: 'inherit',
+    textDecoration: 'none',
   },
   item: {
-      display: 'flex',
-      [theme.breakpoints.down('sm')]: {
-        display: 'none',
-      },
+    display: 'flex',
+    [theme.breakpoints.down('sm')]: {
+      display: 'none',
+    },
   },
 }));
 
@@ -45,7 +45,6 @@ export default function ButtonAppBar() {
   const wantedlyUrl = 'https://www.wantedly.com/users/90816883';
   const qiitaUrl = 'https://qiita.com/___xxx_';
   const githubUrl = 'https://github.com/maki-iida';
-  
   return (
     <div className={classes.root}>
       <AppBar className={classes.appBar} position="fixed">

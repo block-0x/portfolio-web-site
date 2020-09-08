@@ -26,8 +26,8 @@ const useStyles = makeStyles((theme) => ({
     width: 100,
     '&:hover, &.focus': {
     backgroundColor: '#4bc0c8',
-},
-},
+    },
+  },
   appBarIcon: {
     color: '#454545',
     marginTop: 20,
@@ -35,8 +35,8 @@ const useStyles = makeStyles((theme) => ({
     width: 100,
     '&:hover, &.focus': {
     backgroundColor: '#4bc0c8',
-},
-},
+    },
+  },
   fullList: {
     width: 'auto',
   },
@@ -65,18 +65,15 @@ export default function TemporaryDrawer() {
     bottom: false,
     right: false,
   });
-
   const toggleDrawer = (side, open) => event => {
     if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
       return;
     }
-
     setState({ ...state, [side]: open });
   };
 
   const twitterUrl = 'https://twitter.com/isamudesu_';
   const gitHubUrl = 'https://github.com/isamu-takemoto';
-
   const sideList = side => (
     <div
       className={classes.list}
@@ -96,7 +93,6 @@ export default function TemporaryDrawer() {
       </List>
     </div>
   );
-
   return (
     <div>
       <MenuIcon onClick={toggleDrawer('right', true)} className={classes.drawer}></MenuIcon>
