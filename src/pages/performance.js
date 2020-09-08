@@ -64,7 +64,10 @@ class Performance extends React.Component {
       title: 'Performance',
       subtitle: '実績',
       workFlag: ['0', '1', '2', '3'],
-      portfolioImg: './images/p_1.png',
+      portfolioImg_0: './images/p_1.png',
+      portfolioImg_1: './images/profile_image.png',
+      portfolioImg_2: './images/p_1.png',
+      portfolioImg_3: './images/p_1.png',
       portfolioTitle: "Portfolio",
       portfolioDate: '2020.09',
       portfolioSummary: 'Reactを使用したポートフォリオ紹介サイト',
@@ -79,16 +82,16 @@ class Performance extends React.Component {
         <Container>
           <div className={classes.contents}>
             <div className={classes.app}>
-              <SimpleModal Images={this.state.portfolioImg} workFlag={this.state.workFlag[0]}/>
+              <SimpleModal Images={this.state.portfolioImg_0} workFlag={this.state.workFlag[0]}/>
             </div>
             <div className={classes.app}>
-              <SimpleModal Images={this.state.portfolioImg} workFlag={this.state.workFlag[1]}/>
+              <SimpleModal Images={this.state.portfolioImg_1} workFlag={this.state.workFlag[1]}/>
             </div>
             <div className={classes.app}>
-              <SimpleModal Images={this.state.portfolioImg} workFlag={this.state.workFlag[2]}/>
+              <SimpleModal Images={this.state.portfolioImg_2} workFlag={this.state.workFlag[2]}/>
             </div>
             <div className={classes.app}>
-              <SimpleModal Images={this.state.portfolioImg} workFlag={this.state.workFlag[3]}/>
+              <SimpleModal Images={this.state.portfolioImg_3} workFlag={this.state.workFlag[3]}/>
             </div>
           </div>
         </Container>

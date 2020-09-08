@@ -41,7 +41,7 @@ const useStyles = makeStyles(theme => ({
   },
   modalImage: {
     marginLeft: 40,
-    marginTop: 40,
+    marginTop: 20,
     borderRadius: 16,
     boxShadow: '0 4px 20px 0 rgba(0, 0, 0, 0.1), 0 7px 10px -5px rgba(75, 192, 200, 0.2)',
     width: 500,
@@ -66,9 +66,16 @@ const useStyles = makeStyles(theme => ({
     fontSize: 22,
     color: '#666666',
   },
+  skill: {
+    width: 500,
+    [theme.breakpoints.down('sm')]: {
+      width: 90,
+      fontSize: '0.7rem',
+    },
+  },
   skillIcon: {
     marginLeft: 40,
-    marginTop: 36,
+    marginTop: 18,
     marginRight: 5,
     width: 100,
     color: '#4bc0c8',
@@ -102,7 +109,7 @@ export default function SimpleModal(props) {
 
   if (props.workFlag === workFlag[0]){
     portfolioTitle = "Portfolio Web Site";
-    portfolioImg = './images/p_1.png';
+    portfolioImg = './images/profile_image.png';
     portfolioDate = '2020.09';
     gitHubUrl = 'https://github.com/maki-iida/portfolio-web-site/';
     portfolioUrl = 'https://portfolio999.herokuapp.com/';
@@ -113,38 +120,41 @@ export default function SimpleModal(props) {
       'ルーティング: react-router-dom',
     ];
   } else if (props.workFlag === workFlag[1]){
-    portfolioTitle = "Portfolio";
+    portfolioTitle = "YouTuber-channel-scraper";
     portfolioImg = './images/profile_image.png';
     portfolioDate = '2020.08';
     gitHubUrl = 'https://github.com/maki-iida/YouTube-Scraping/';
     portfolioUrl = '';
-    portfolio = ['React', 'Material-UI','React router'];
+    portfolio = ['Python3', 'BeautifulSoup','selenium', 'csv','numpy', 'Docker'];
     portfolioText = [
-      'フレームワーク: React.js',
-      'UIライブラリ: Material UI',
-      'ルーティング: react-router-dom',
-      'レスポンシブ対応',
-      '静的サイト'];
+      'YouTuberのチャンネル情報をスクレイピングします',
+      'Splashブラウザを使用し、アクセス制限を回避',
+      '無限に取得と更新を繰り返します。',
+    ];
   } else if (props.workFlag === workFlag[2]){
-    gitHubUrl = '';
+    portfolioTitle = "YouTuber-scraper";
+    portfolioImg = './images/profile_image.png';
+    portfolioDate = '2020.07';
+    gitHubUrl = 'https://github.com/maki-iida/YouTube-Scraping/';
     portfolioUrl = '';
-    portfolio = ['React', 'Material-UI','React router'];
+    portfolio = ['Python3', 'BeautifulSoup', 'selenium', 'csv', 'numpy', 'Docker'];
     portfolioText = [
-      'フレームワーク: React.js',
-      'UIライブラリ: Material UI',
-      'ルーティング: react-router-dom',
-      'レスポンシブ対応',
-      '静的サイト'];
+      'YouTubeの検索結果をスクレイピングします',
+      'BeautifulSoupを使用して最後までスクロールし、全検索結果を取得',
+    ];
   } else if (props.workFlag === workFlag[3]){
-    gitHubUrl = '';
+    portfolioTitle = "実務で実装したサイト";
+    portfolioImg = './images/profile_image.png';
+    portfolioDate = '2019.02 ~ 2019.08';
+    gitHubUrl = 'https://beauty-upgrade.tw/';
     portfolioUrl = '';
-    portfolio = ['React', 'Material-UI','React router'];
+    portfolio = ['Ruby', 'Ruby on Rails', 'JavaScript', 'MySQL', 'jQuery', 'AWS', 'WordPress'];
     portfolioText = [
-      'フレームワーク: React.js',
-      'UIライブラリ: Material UI',
-      'ルーティング: react-router-dom',
-      'レスポンシブ対応',
-      '静的サイト'];
+      '開発に携わった自社サービスのプロダクトです',
+      'Ruby on RailsとWordPressで構築されたWebアプリケーション',
+      'サーバーサイドエンジニア',
+      '台湾がメインダーゲット'
+    ];
   }
 
   return (
@@ -159,7 +169,7 @@ export default function SimpleModal(props) {
         <div  className={classes.paper}>
           <div className={classes.app}>
             <img src={portfolioImg} alt="" className={classes.modalImage} />
-            <div>
+            <div className={classes.skill}>
               <br />
               <br />
               {portfolio.map(skill =>
