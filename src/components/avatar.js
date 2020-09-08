@@ -13,7 +13,6 @@ const useStyles = makeStyles({
 
 export default function ImageAvatar() {
   const classes = useStyles();
-
   return (
     <Grid container justify="center" alignItems="center">
       <Avatar alt="my picture" src="images/profile_image.png" className={classes.Avatar} />
