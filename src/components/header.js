@@ -9,7 +9,6 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import { Link } from 'react-router-dom';
 import TemporaryDrawer from './drawer';
 
-
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -42,7 +41,6 @@ const useStyles = makeStyles((theme) => ({
 
 export default function ButtonAppBar() {
   const classes = useStyles();
-
   const facebookUrl = 'https://www.facebook.com/profile.php?id=100006804640814';
   const wantedlyUrl = 'https://www.wantedly.com/users/90816883';
   const qiitaUrl = 'https://qiita.com/___xxx_';

@@ -79,7 +79,7 @@ class Performance extends React.Component {
         <Container>
           <div className={classes.contents}>
             <div className={classes.app}>
-              <SimpleModal Images={this.state.portfolioImg} workFlag={this.state.workFlag[0]} title={this.state.portfolioTitle} date={this.state.portfolioDate} summary={this.state.portfolioSummary}/>
+              <SimpleModal Images={this.state.portfolioImg} workFlag={this.state.workFlag[0]}/>
             </div>
             <div className={classes.app}>
               <SimpleModal Images={this.state.portfolioImg} workFlag={this.state.workFlag[1]}/>

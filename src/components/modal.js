@@ -68,7 +68,7 @@ const useStyles = makeStyles(theme => ({
   },
   skillIcon: {
     marginLeft: 40,
-    marginTop: 10,
+    marginTop: 36,
     marginRight: 5,
     width: 100,
     color: '#4bc0c8',
@@ -91,8 +91,6 @@ export default function SimpleModal(props) {
     setOpen(false);
   };
   const workFlag = ['0', '1', '2', '3'];
-  let title = [];
-  let subtitle = [];
   let portfolioImg =  [];
   let portfolioTitle = [];
   let portfolioDate = [];
@@ -103,24 +101,23 @@ export default function SimpleModal(props) {
   let portfolioText = [];
 
   if (props.workFlag === workFlag[0]){
-    title = 'Performance';
-    subtitle = '実績';
+    portfolioTitle = "Portfolio Web Site";
     portfolioImg = './images/p_1.png';
-    portfolioTitle = "Portfolio";
     portfolioDate = '2020.09';
-    portfolioSummary = '2020.09';
     gitHubUrl = 'https://github.com/maki-iida/portfolio-web-site/';
     portfolioUrl = 'https://portfolio999.herokuapp.com/';
     portfolio = ['React', 'Material-UI','React router'];
     portfolioText = [
-      'フレームワーク: React.js',
-      'UIライブラリ: Material UI',
-      'ルーティング: react-router-dom',
+      'ポートフォリオをまとめた静的サイト',
       'レスポンシブ対応',
-      '静的サイト'];
+      'ルーティング: react-router-dom',
+    ];
   } else if (props.workFlag === workFlag[1]){
-    gitHubUrl = 'https://github.com/maki-iida/portfolio-web-site/';
-    portfolioUrl = 'https://portfolio999.herokuapp.com/';
+    portfolioTitle = "Portfolio";
+    portfolioImg = './images/profile_image.png';
+    portfolioDate = '2020.08';
+    gitHubUrl = 'https://github.com/maki-iida/YouTube-Scraping/';
+    portfolioUrl = '';
     portfolio = ['React', 'Material-UI','React router'];
     portfolioText = [
       'フレームワーク: React.js',
@@ -129,8 +126,8 @@ export default function SimpleModal(props) {
       'レスポンシブ対応',
       '静的サイト'];
   } else if (props.workFlag === workFlag[2]){
-    gitHubUrl = 'https://github.com/maki-iida/portfolio-web-site/';
-    portfolioUrl = 'https://portfolio999.herokuapp.com/';
+    gitHubUrl = '';
+    portfolioUrl = '';
     portfolio = ['React', 'Material-UI','React router'];
     portfolioText = [
       'フレームワーク: React.js',
@@ -139,8 +136,8 @@ export default function SimpleModal(props) {
       'レスポンシブ対応',
       '静的サイト'];
   } else if (props.workFlag === workFlag[3]){
-    gitHubUrl = 'https://github.com/maki-iida/portfolio-web-site/';
-    portfolioUrl = 'https://portfolio999.herokuapp.com/';
+    gitHubUrl = '';
+    portfolioUrl = '';
     portfolio = ['React', 'Material-UI','React router'];
     portfolioText = [
       'フレームワーク: React.js',
@@ -161,14 +158,10 @@ export default function SimpleModal(props) {
       >
         <div  className={classes.paper}>
           <div className={classes.app}>
-            <img src={props.Images} alt="" className={classes.modalImage} />
-            <img src={props.portfolioImg} alt="" className={classes.portfolioImg} />
-            {/* <img src={this.state.portfolioImg} workFlag={this.state.workFlag[0]} title={this.state.portfolioTitle} date={this.state.portfolioDate} summary={this.state.portfolioSummary}/> */}
+            <img src={portfolioImg} alt="" className={classes.modalImage} />
             <div>
-              <Button className={classes.appBarButton} color="inherit" onClick={() => {window.open(gitHubUrl);}}><GitHubIcon/></Button>
-              <Button className={classes.appBarButton} color="inherit" onClick={() => {window.open(portfolioUrl);}}><LinkIcon/></Button>
-            </div>
-            <div>
+              <br />
+              <br />
               {portfolio.map(skill =>
               <Chip key={skill} label={skill} variant="outlined" className={classes.skillIcon} />
               )}
@@ -183,15 +176,20 @@ export default function SimpleModal(props) {
             </div>
             <div className={classes.coment}>
               <p>
-                {props.summary}
+                <h2>
+                  {portfolioTitle}
+                </h2>
+                <Button className={classes.appBarButton} color="inherit" onClick={() => {window.open(gitHubUrl);}}><GitHubIcon/></Button>
+                {portfolioDate}
                 <br />
-                
                 <br />
                 概要
                 <br />
-                  {portfolioText.map(Text =>
-                    <li>{Text}</li>
-                  )}
+                <br />
+                <br />
+                {portfolioText.map(Text =>
+                  <li>{Text}</li>
+                )}
               </p>
             </div>
           </div>
