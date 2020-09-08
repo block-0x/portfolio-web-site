@@ -109,7 +109,7 @@ export default function SimpleModal(props) {
 
   if (props.workFlag === workFlag[0]){
     portfolioTitle = "Portfolio Web Site";
-    portfolioImg = './images/profile_image.png';
+    portfolioImg = './images/Portfolio_web-site.gif';
     portfolioDate = '2020.09';
     gitHubUrl = 'https://github.com/maki-iida/portfolio-web-site/';
     portfolioUrl = 'https://portfolio999.herokuapp.com/';
@@ -120,31 +120,31 @@ export default function SimpleModal(props) {
       'ルーティング: react-router-dom',
     ];
   } else if (props.workFlag === workFlag[1]){
-    portfolioTitle = "YouTuber-channel-scraper";
-    portfolioImg = './images/profile_image.png';
+    portfolioTitle = "music-scraper";
+    portfolioImg = './images/scraping_image2.gif';
     portfolioDate = '2020.08';
-    gitHubUrl = 'https://github.com/maki-iida/YouTube-Scraping/';
+    gitHubUrl = 'https://github.com/maki-iida/music-scraper/';
     portfolioUrl = '';
     portfolio = ['Python3', 'BeautifulSoup','selenium', 'csv','numpy', 'Docker'];
     portfolioText = [
-      'YouTuberのチャンネル情報をスクレイピングします',
+      '最近伸びているmusic動画をYouTubeの中から抽出します',
       'Splashブラウザを使用し、アクセス制限を回避',
       '無限に取得と更新を繰り返します。',
     ];
   } else if (props.workFlag === workFlag[2]){
     portfolioTitle = "YouTuber-scraper";
-    portfolioImg = './images/profile_image.png';
+    portfolioImg = './images/scraping_image1.gif';
     portfolioDate = '2020.07';
     gitHubUrl = 'https://github.com/maki-iida/YouTube-Scraping/';
     portfolioUrl = '';
     portfolio = ['Python3', 'BeautifulSoup', 'selenium', 'csv', 'numpy', 'Docker'];
     portfolioText = [
-      'YouTubeの検索結果をスクレイピングします',
+      'YouTubeの検索結果とチャンネル情報をスクレイピングします',
       'BeautifulSoupを使用して最後までスクロールし、全検索結果を取得',
     ];
   } else if (props.workFlag === workFlag[3]){
     portfolioTitle = "実務で実装したサイト";
-    portfolioImg = './images/profile_image.png';
+    portfolioImg = './images/bu_image.gif';
     portfolioDate = '2019.02 ~ 2019.08';
     gitHubUrl = 'https://beauty-upgrade.tw/';
     portfolioUrl = '';
