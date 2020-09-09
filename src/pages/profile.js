@@ -200,7 +200,7 @@ class Profile extends React.Component {
                 <div className={classes.timeline}>
                   <div className="entry">
                     <div className="header">
-                      <p className="during">2018.04 - 2019.9</p>
+                      <p className="during">2019.05 - 2019.10</p>
                       <Typography variant="h3" className="title">
                       <dt>起業・共同設立 ネット広告系アプリ
                       <br/>ディレクター 兼 フロントエンジニア</dt>
@@ -225,7 +225,7 @@ class Profile extends React.Component {
                 <div className={classes.timeline}>
                   <div className="entry">
                     <div className="header">
-                      <p className="during">2017.08 - 2018.01</p>
+                      <p className="during">2019.02 - 2019.10</p>
                       <Typography variant="h3" className="title">
                       <dt>メディア系アプリ
                       <br/>サーバーサイドエンジニア</dt>
@@ -250,7 +250,7 @@ class Profile extends React.Component {
                 <div className={classes.timeline}>
                   <div className="entry">
                     <div className="header">
-                      <p className="during">2012.04 - 2017.08</p>
+                      <p className="during">2018.08 - 2018.12</p>
                       <Typography variant="h3" className="title">
                       <dt>DMM Web Camp
                       <br/>Ruby on Rails</dt>
@@ -268,7 +268,6 @@ class Profile extends React.Component {
                         <br />
                         <br />
                         Ruby, Ruby on Rails, Javascript, HTML, CSS, GitHub, AWS
-                        
                       </p>
                     </div>
                   </div>
@@ -276,7 +275,7 @@ class Profile extends React.Component {
                 <div className={classes.timeline}>
                   <div className="entry">
                     <div className="header">
-                      <p className="during">2012.04 - 2017.08</p>
+                      <p className="during">2017.04 - 2018.06</p>
                       <Typography variant="h3" className="title">
                       <dt>SES
                       <br/>ネットワークエンジニア</dt>
@@ -294,7 +293,7 @@ class Profile extends React.Component {
                 <div className={classes.timeline}>
                   <div className="entry">
                     <div className="header">
-                      <p className="during">2012.04 - 2017.08</p>
+                      <p className="during">2014.04 - 2017.03</p>
                       <Typography variant="h3" className="title">
                       <dt>人材開発
                       <br/>技術職（工業系）</dt>
