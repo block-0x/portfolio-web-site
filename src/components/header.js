@@ -8,6 +8,9 @@ import FacebookIcon from '@material-ui/icons/Facebook';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import { Link } from 'react-router-dom';
 import TemporaryDrawer from './drawer';
+import Tippy from '@tippy.js/react';
+import 'tippy.js/dist/tippy.css';
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -54,15 +57,19 @@ export default function ButtonAppBar() {
               Portfolio
             </Link>
           </Typography>
-           <TemporaryDrawer />
-           <div className={classes.item}>
-             <Link to="/" className={classes.link}><Button className={classes.appBarButton} color="inherit">Portfolio</Button></Link>
-             <Link to="/profile" className={classes.link}><Button className={classes.appBarButton} color="inherit">Profile</Button></Link>
-             <Button className={classes.appBarButton} color="inherit" onClick={() => {window.open(qiitaUrl);}}>Qiita</Button>
-             <Button className={classes.appBarButton} color="inherit" onClick={() => {window.open(wantedlyUrl);}}>Wantedly</Button>
-             <Button className={classes.appBarButton} color="inherit" onClick={() => {window.open(facebookUrl);}}><FacebookIcon/></Button>
-             <Button className={classes.appBarButton} color="inherit" onClick={() => {window.open(githubUrl);}}><GitHubIcon/></Button>
-           </div>
+          <TemporaryDrawer />
+          <div className={classes.item}>
+          <Link to="/" className={classes.link}><Button className={classes.appBarButton} color="inherit">Portfolio</Button></Link>
+          <Link to="/profile" className={classes.link}><Button className={classes.appBarButton} color="inherit">Profile</Button></Link>
+          <Tippy content="Qiitaを見る" delay={[300, 0]} >
+            <Button className={classes.appBarButton} color="inherit" onClick={() => {window.open(qiitaUrl);}}>Qiita</Button>
+          </Tippy>
+          <Tippy content="Wantedlyを見る" delay={[300, 0]} >
+            <Button className={classes.appBarButton} color="inherit" onClick={() => {window.open(wantedlyUrl);}}>Wantedly</Button>
+          </Tippy>
+          <Button className={classes.appBarButton} color="inherit" onClick={() => {window.open(facebookUrl);}}><FacebookIcon/></Button>
+          <Button className={classes.appBarButton} color="inherit" onClick={() => {window.open(githubUrl);}}><GitHubIcon/></Button>
+          </div>
         </Toolbar>
       </AppBar>
     </div>

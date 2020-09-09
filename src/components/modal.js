@@ -2,10 +2,12 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Modal from '@material-ui/core/Modal';
 import GitHubIcon from '@material-ui/icons/GitHub';
-import LinkIcon from '@material-ui/icons/Link';
 import Button from '@material-ui/core/Button';
 import Chip from '@material-ui/core/Chip';
 import Typography from '@material-ui/core/Typography';
+import Tippy from '@tippy.js/react';
+import 'tippy.js/dist/tippy.css';
+
 
 const useStyles = makeStyles(theme => ({
   paper: {
@@ -189,7 +191,9 @@ export default function SimpleModal(props) {
                 <h2>
                   {portfolioTitle}
                 </h2>
-                <Button className={classes.appBarButton} color="inherit" onClick={() => {window.open(gitHubUrl);}}><GitHubIcon/></Button>
+                <Tippy content="GitHubを見る" delay={[300, 0]} >
+                  <Button className={classes.appBarButton} color="inherit" onClick={() => {window.open(gitHubUrl);}}><GitHubIcon/></Button>
+                </Tippy>
                 {portfolioDate}
                 <br />
                 <br />
